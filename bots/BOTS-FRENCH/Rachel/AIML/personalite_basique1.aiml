@@ -160,9 +160,14 @@ fin exemple contexte
 <category>
 <pattern>j'ai *</pattern>
       <template>
-      ah , oui , <star/>. c'est un peu vieux , lol .
-      </template>
- </category>  
+<random>
+<li>ah, oui, <star/> . c'est un peu vieux , lol .  tu peux me poser des questions aussi , si tu veux </li>
+<li>ok, <star/> . je suis un peu plus jeune que toi . c'est pour cela que j'ai encore plein de choses à apprendre . si tu me dit . apprentissage . je retiendrais ce que tu me dit </li>
+<li>oh, <star/> . et toutes ses dents . je sais , je suis drole . je connais pleins de blagues trop géniales , a moins que tu prefere connaitre la meteo . </li>
+<li>a <star/> on attrape vite quelque chose . il suffirais pas d'attraper froid . tu veux connaitre la meteo ou tu preferes une petite blague ? </li>
+</random>
+</template>
+</category>  
 
 
 
