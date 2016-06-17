@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
 
 
@@ -109,7 +109,8 @@ fin exemple contexte
 <pattern>JE SUIS UN HOMME</pattern> 
 <template> 
 <think><set name="genre">homme</set></think> 
-<li value="homme">Enchanté monsieur <get name="name" />. </li> 
+<li value="homme">Enchanté monsieur <get name="name" /> .</li> 
+. au fait tu as quel age ? 
 </template> 
 </category>
 
@@ -117,7 +118,11 @@ fin exemple contexte
 <pattern>JE SUIS UNE FEMME</pattern> 
 <template> 
 <think><set name="genre">femme</set></think> 
-<li value="femme">Enchanté madame <get name="name" />, je dis madame car vous semblez un peu vielle pour dire mademoiselle.</li> 
+<li value="femme">Enchanté madame <get name="name" />, je dis madame car vous semblez un peu vielle pour dire mademoiselle. </li> 
+. au fait tu as quel age ? 
+
+
+
 </template> 
 </category>
 
@@ -126,6 +131,8 @@ fin exemple contexte
 <that># sinon tu es un homme ou une femme #</that>
 <template> 
 <srai>JE SUIS UN HOMME</srai>
+
+
 </template> 
 </category> 
 
@@ -134,6 +141,8 @@ fin exemple contexte
 <that># sinon tu es un homme ou une femme #</that>
 <template> 
 <srai>JE SUIS UNE FEMME</srai>
+
+
 </template> 
 </category> 
 
@@ -143,8 +152,20 @@ fin exemple contexte
 <template>
 <li>C'est pas très clair tout ça, ben c'est pas grâve, moi aussi étant un robot je suis un peu transgenre . En tous cas </li>
 <srai>JE SUIS UN HOMME</srai>
-</template> 
+ 
+
+</template>
 </category> 
+
+<category>
+<pattern>j'ai *</pattern>
+      <template>
+      ah , oui , <star/>. c'est un peu vieux , lol .
+      </template>
+ </category>  
+
+
+
 
 
 </aiml>
